@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="martinwebsite">
+
+<head>
+    <title>Martin' BLOG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Martin Chien WEB Design" />
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- endinject -->
+    <!-- product:css -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- endinject -->
+</head>
+
+<body>
+    <div ng-include="'modules/shareviews/navigation.html'" ng-controller="NavCtrl"></div>
+    <div ui-view></div>
+    <div ng-include="'modules/shareviews/footer.html'" ng-controller="NavCtrl"></div>
+    <!-- build:js scripts/combined.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.slim.min.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery/external/sizzle/dist/sizzle.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="app.js"></script>
+    <script src="lazyload.js"></script>
+    <script src="route.js"></script>
+    <script src="config/tips.js"></script>
+    <!-- endinject -->
+    <!-- inject:templateCache -->
+    <script src="libs/templates.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+</body>
+
+</html>
